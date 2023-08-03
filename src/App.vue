@@ -1,32 +1,87 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
-</template>
+  <div id="pozadina" style="background:rgb(248, 159, 76);">
+  
+    <div id="app">
+      <nav id="nav1">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  
+        <div class="container-fluid" id="nav2">
+          <p id="naziv"><b>Monu</b></p> 
+  
+          <div class="collapse navbar-collapse" id="navbarToggledDemo02">
+            <ul class="navbar-nav ml-auto">
+              <router-link id="link" to="/About">About Us</router-link>
+              <router-link id="link2" to="/Cities">Cities</router-link>
+              <router-link id="link2" to="/Natural">Natural beauties</router-link>
+              <router-link id="link3" to="/Blog">Blog</router-link>
+                    
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+      </nav>
+  
+    <router-view/> 
+    </div>
+  </div>      
+  </template>
+  
+  <script>
+  document.body.style.backgroundColor="rgb(248, 159, 76)";
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  </script>
+
+
+  <style lang="scss">
+  
+  #app{
+  font-family:'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  color: #ffffff;
   }
-}
-</style>
+  
+  #nav1{
+  padding: 30px;
+  background-color: rgb(206, 127, 54);
+  }
+  
+  #naziv{
+    text-align: center;
+    font-size: 55px;
+    margin: 30px 30px 50px 10px;
+  }
+  
+  #link{
+    color: rgb(68, 67, 67);
+    margin-left:50px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #link2{
+    color: rgb(68, 67, 67);
+    margin-left:100px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #link3{
+    color: rgb(68, 67, 67);
+    margin-left:100px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #link4{
+    color: rgb(68, 67, 67);
+    margin-left:100px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:right;
+  }
+  
+  
+  </style>
+  
