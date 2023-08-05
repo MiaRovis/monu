@@ -3,67 +3,67 @@
 <h1 id="naslov">Click on the city you would like to explore!</h1><br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Pula</router-link>
+    <router-link id="linkgr" to="/Pula">Pula</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Rijeka</router-link>
+    <router-link id="linkgr" to="/Rijeka">Rijeka</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Zagreb</router-link>
+    <router-link id="linkgr" to="/Zagreb">Zagreb</router-link>
 </h4>
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Split</router-link>
+    <router-link id="linkgr" to="/Split">Split</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Dubrovnik</router-link>
+    <router-link id="linkgr" to="/Dubrovnik">Dubrovnik</router-link>
 </h4>
 <br/> 
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Zadar</router-link>
+    <router-link id="linkgr" to="/Zadar">Zadar</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Vukovar</router-link>
+    <router-link id="linkgr" to="/Vukovar">Vukovar</router-link>
 </h4>
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Krk</router-link>
+    <router-link id="linkgr" to="/Krk">Krk</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Osijek</router-link>
+    <router-link id="linkgr" to="/Osijek">Osijek</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Poreč</router-link>
+    <router-link id="linkgr" to="/Poreč">Poreč</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Medvedgrad</router-link>
+    <router-link id="linkgr" to="/Med">Medvedgrad</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Šibenik</router-link>
+    <router-link id="linkgr" to="/Šibenik">Šibenik</router-link>
 </h4> 
 <br/>
 
 <h4>
-    <router-link id="linkgr" to="/Cities">Trogir</router-link>
+    <router-link id="linkgr" to="/Trogir">Trogir</router-link>
 </h4> 
 <br/>
 

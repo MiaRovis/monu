@@ -5,7 +5,7 @@
     </div>
     
     <div class="card-body p-0">
-     <img id="mljet" class="card-img-top" src="@/assets/mljet.jpg"/>
+     <img id="mljet" class="card-img-top" src="@/assets/priroda/mljet.jpg"/>
     </div>
     
     <div class="card-footer text-muted text-left">

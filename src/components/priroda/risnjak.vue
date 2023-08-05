@@ -5,7 +5,7 @@
     </div>
     
     <div class="card-body p-0">
-     <img id="risnjak" class="card-img-top" src="@/assets/risnjak.jpg"/>
+     <img id="risnjak" class="card-img-top" src="@/assets/priroda/risnjak.jpg"/>
     </div>
     
     <div class="card-footer text-muted text-left">
