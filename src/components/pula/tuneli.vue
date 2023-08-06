@@ -9,7 +9,14 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime">opis</p>
+        <p id="ime"><b>Zerostrasse - Pula underground tunnels</b><br/>
+        The underground tunnles create a 10km long underground net which connects Pula fortifications<br/>
+        The most famous tunnels are under Kaštel<br/>
+        In the middle there is a hall which is placed directly under Venetian fortress<br/>
+        There are 4 different entrances that lead to the hall - Dvojna vrata, Nemeš gallery, Tech school and on the hill by the friery<br/>
+        Tunnels are in relatively good condition with an access to power and water<br/>
+        
+        </p>
     </div>
     </div>
     

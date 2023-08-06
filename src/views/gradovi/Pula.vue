@@ -47,7 +47,7 @@
         
     
     export default{
-        name: 'Natural',
+        name: 'Pula',
         components: {
             arena,
             dvojna,

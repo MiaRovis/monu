@@ -5,7 +5,7 @@
     </div>
     
     <div class="card-body p-0">
-     <img id="kip" class="card-img-top" src="@/assets/zagreb/kip.jpg"/>
+     <img id="podrumist" class="card-img-top" src="@/assets/split/podrumist.jpg"/>
     </div>
     
     <div class="card-footer text-muted text-left">
@@ -22,13 +22,13 @@
     
     <script>
     export default{
-        name: 'kip',
+        name: 'podrumist',
     };
     </script>
     
     
     <style lang="scss">
-    #kip{
+    #podrumist{
         height:300px;
         width:300px;
     }

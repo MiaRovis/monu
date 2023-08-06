@@ -14,7 +14,7 @@
             The honorary triumphal arch, originally a city gate, was erected as a symbol of the victory at Actium<br/>
             In its original form, statues of the two elders flanked Lepidus on both sides on the top of the arch. On either side of the inscription, a frieze depicts cupids, garlands and bucrania<br/>
             It was built from 29BC to 27BC<br/>
-            <b>Location</b>: Prvomajska ulica, Pula
+            
         </p>
     </div>
     </div>
