@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">The Church of Saints Philip and James</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,8 +9,13 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
-           
+        <p id="ime"><b>The Church of Saints Philip and James - Roman Catholic church</b><br/>
+            The church was built from 1723 till 1732, when it was blessed by Marko Dragojević<br/>
+            It was built by Franciscan monks who moved to Vukovar from the village of Srijemske Laze<br/>
+            It is a part of the monastery in Vukovar<br/>
+            It's 58 meters long, making in the thirds longest church in Croatia<br/>
+            After severe suffering in the Serbian aggression and occupation, it was thoroughly restored, although some wounds were left as a reminder of wartime suffering<br/>
+            
 
         </p>
     

@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">Gradska Ura</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,9 +9,11 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
-           
-
+        <p id="ime"><b>The city clock - city tower with a clock on top</b><br/>
+           It is a significant building of Rijeka in the middle of Korzo<br/>
+           One of the main symbols of Rijeka, a symbol of culture<br/>
+            Under the clock there is a double headed eagle with both heads turned to the same side, which stands on a vessel from which there is water going into the sea<br/>
+            On the vessel there is a word Ideficienter, which means inexhaustible
         </p>
     
     

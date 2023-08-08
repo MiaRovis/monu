@@ -3,7 +3,11 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Rijeka</b> <br/></h1>
-        opis
+            Rijeka is the principal seaport and the third-largest city in Croatia<br/>
+            It is located in Primorje-Gorski Kotar County on Kvarner Bay, an inlet of the Adriatic Sea and in 2021 had a population of 108,622 inhabitants<br/>
+            The city's economy largely depends on shipbuilding and maritime transport<br/>
+            Historically, because of its strategic position and its excellent deep-water port, the city was fiercely contested, especially between the Holy Roman Empire, Italy and Croatia, changing rulers and demographics many times over centuries<br/>
+
         </div>
 
 
@@ -27,7 +31,7 @@
             <ura/>
         </div>
         <div class="col order-1">
-            <trsat/>
+            <trsatska/>
         </div>
         </div>        
         

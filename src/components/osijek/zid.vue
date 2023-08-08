@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">City walls and water gate</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,8 +9,10 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
-           
+        <p id="ime"><b>City walls and the water gate - entrance to the city's old center Tvrđa</b><br/>
+           The name "Water gate" comes from the fact that they lead to the river Drava<br/>
+           They are found inside the walls of Tvrđa<br/>
+
 
         </p>
     

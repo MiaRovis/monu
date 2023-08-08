@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">Vuka bridge</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,7 +9,10 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
+        <p id="ime"><b>Vuka bridge</b><br/>
+            A bridge in Vukovar going accross the Vuka river<br/>
+            It is one of the symbols of Vukovar, and offers a beautiful view on Vuka and Danube<br/>
+            On the bridge there can be found 3D stickers with which visitors can have fun making photos
            
 
         </p>

@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">The pedestrian bridge</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,7 +9,11 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
+        <p id="ime"><b>The Pedestrian bridge - most notable symbol of Osijek</b><br/>
+           It is a hanging bridge accros Drava in Osijek<br/>
+           It connects the city center with recreational center found accross the river<br/>
+           It is the most beautiful symbol of the city and its looks are one of a kind<br/>
+           From the day it was built till the war it was called the Youth bridge, and many people still call it by that name today<br/>
            
 
         </p>

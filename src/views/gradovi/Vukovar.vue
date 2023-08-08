@@ -3,7 +3,11 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Vukovar</b> <br/></h1>
-        opis
+        Vukovar is a hero city in the eastern region of Slavonia<br/>
+        It contains Croatia's largest river port, located at the confluence of the Vuka and the Danube<br/>
+        The name Vukovar means town on the Vuka River<br/>
+        The town is very special to Croatians because it is the first town to be attacked in the war<br/>
+        The town holds many special monuments one of which is a statue of Croatian independence and victory
         </div>
 
 
@@ -21,13 +25,10 @@
     
         <div class="row">
         <div class="col">
-            <franjevci/>
+            <toranj/>
         </div>
         <div class="col order-5">
             <mostv/>
-        </div>
-        <div class="col order-1">
-            <toranj/>
         </div>
         </div>        
         
@@ -38,7 +39,6 @@
     import crkvafj from '@/components/vukovar/crkvafj.vue';
     import dom from '@/components/vukovar/dom.vue';
     import eltz from '@/components/vukovar/eltz.vue';
-    import franjevci from '@/components/vukovar/franjevci.vue';
     import mostv from '@/components/vukovar/mostv.vue';
     import toranj from '@/components/vukovar/toranj.vue';
    
@@ -51,7 +51,6 @@
             crkvafj,
             dom,
             eltz,
-            franjevci,
             mostv,
             toranj
             
