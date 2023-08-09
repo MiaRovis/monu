@@ -3,8 +3,11 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Šibenik</b> <br/></h1>
-        opis
-        </div>
+        Šibenik, historically known as Sebenico, is a historic city in Croatia, located in central Dalmatia, where the river Krka flows into the Adriatic Sea<br/>
+        It's a political, educational, transport, industrial and tourist center of Šibenik-Knin County, and is also the third-largest city in the Dalmatian region<br/>
+        Unlike other cities along the Adriatic coast, which were established by Greeks, Illyrians and Romans, Šibenik was founded by Croats<br/>
+        
+    </div>
 
 
         <div class="row">

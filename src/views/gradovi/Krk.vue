@@ -3,16 +3,16 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Krk</b> <br/></h1>
-            
+            Krk is a Croatian island in the northern Adriatic Sea, located near Rijeka in the Bay of Kvarner and part of Primorje-Gorski Kotar county<br/>
+            It's tied with Cres as the largest Adriatic island, depending on the methodology used to measure the coastline<br/>
+            The most populous island in the Adriatic, with multiple towns and villages that contain a total of 19,383 inhabitants<br/>
+             
         </div>
 
 
         <div class="row">
         <div class="col">
           <franko/> 
-        </div>
-        <div class="col order-5">
-            <jakov/>
         </div>
         <div class="col order-1">
             <lucija/>
@@ -23,8 +23,11 @@
         <div class="col">
             <ploča/>
         </div>
+        <div class="col order-1">
+            <put/>
+        </div>
         <div class="col order-5">
-            <samkrk/>
+            <crkva/>
         </div>
         </div>
         
@@ -34,10 +37,11 @@
     
     <script>
     import franko from '@/components/krk/franko.vue';
-    import jakov from '@/components/krk/jakov.vue';
     import lucija from '@/components/krk/lucija.vue';
     import ploča from '@/components/krk/ploča.vue';
-    import samkrk from '@/components/krk/samkrk.vue';
+    import crkva from '@/components/krk/crkva.vue';
+    import put from '@/components/krk/put.vue';
+    
    
     
         
@@ -46,10 +50,11 @@
         name: 'Krk',
         components: {
             franko,
-            jakov,
             lucija,
             ploča,
-            samkrk
+            crkva,
+            put
+            
             
         },
     };
