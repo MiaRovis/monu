@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">The Zagreb Funicular</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,7 +9,11 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
+        <p id="ime"><b>The Zagreb Funicular</b><br/>
+         The funicular in Zagreb is situated in Tomić Street, connecting Ilica (Donji Grad) with Strossmayer promenade to the north (Gornji Grad)<br/>
+         Its 66-metre track makes it one of the shortest public-transport funiculars in the world<br/>
+         The funicular was built and put into operation in 1890 and propelled by a steam engine<br/>
+         It holds a great significance to people of Zagreb because it helps with transportation from one part of the city to the other
            
 
         </p>

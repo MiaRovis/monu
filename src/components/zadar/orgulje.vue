@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">The Sea organ</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,7 +9,11 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
+        <p id="ime"><b>The Sea organ</b>- sound art sea object<br/>
+            They are a unique architectural achievement, an interesting and original combination of architecture and music<br/>
+            Unlike ordinary organs powered by bellows or air pumps, the sound of these organs is created under the influence of the energy of the sea, waves and tides that is<br/>
+            The organs create different sound according to the movement of the sea<br/>
+            They are a beautiful part of Zadar and unlike anything in the world
            
 
         </p>

@@ -1,7 +1,7 @@
 <template>
     <div class="card">
     <div class="card-header text-left">
-    <p id="ime"></p>
+    <p id="ime">St. Mark's Square</p>
     </div>
     
     <div class="card-body p-0">
@@ -9,7 +9,11 @@
     </div>
     
     <div class="card-footer text-muted text-left">
-        <p id="ime"><b></b><br/>
+        <p id="ime"><b>St. Mark's Square</b><br/>
+           It is a square located in the old part of Zagreb, Croatia, called Gradec or Gornji grad<br/>
+           In the center of square is located St. Mark's Church<br/>
+           The square also sports important governmental buildings: Banski dvori (the seat of the Government of Croatia), Croatian Parliament and Constitutional Court of Croatia<br/>
+           On the corner of St. Mark's Square and the Street of Ćiril and Metod is the Old City Hall, where the Zagreb City Council held its sessions<br/>
            
 
         </p>

@@ -3,7 +3,10 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Trogir</b> <br/></h1>
-        opis
+            Trogir,  historically known as Traù, is a historic town and harbour on the Adriatic coast in Split-Dalmatia County, Croatia<br/>
+            The historic city of Trogir is situated on a small island between the Croatian mainland and the island of Čiovo<br/>
+            Since 1997, the historic centre of Trogir has been included in the UNESCO list of World Heritage Sites for its Venetian architecture<br/>
+
         </div>
 
 
@@ -12,16 +15,13 @@
           <ciovo/> 
         </div>
         <div class="col order-5">
-            <gospa/>
-        </div>
-        <div class="col order-1">
-            <kastelk/>
+            <lovre/>
         </div>
         </div>
     
         <div class="row">
         <div class="col">
-            <lovre/>
+            <kastelk/>
         </div>
         <div class="col order-5">
             <palacat/>
@@ -35,8 +35,7 @@
     </template>
     
     <script>
-    import ciovo from '@/components/trogir/ciovo.vue';
-    import gospa from '@/components/trogir/gospa.vue';
+    import ciovo from '@/components/trogir/ciovo.vue'
     import kastelk from '@/components/trogir/kastelk.vue';
     import lovre from '@/components/trogir/lovre.vue';
     import palacat from '@/components/trogir/palacat.vue';
@@ -48,7 +47,6 @@
         name: 'Trogir',
         components: {
             ciovo,
-            gospa,
             kastelk,
             lovre,
             palacat,

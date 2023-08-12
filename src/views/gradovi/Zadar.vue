@@ -3,8 +3,13 @@
     <div class="container text-center">
         <div id="iznad">
             <h1><b>Zadar</b> <br/></h1>
-        opis
-        </div>
+       Zadar, historically known as Zara,  is the oldest continuously inhabited city in Croatia<br/>
+       It is situated on the Adriatic Sea, at the northwestern part of Ravni Kotari region<br/>
+       Zadar serves as the seat of Zadar County and of the wider northern Dalmatian region<br/>
+       The city proper covers 25 km2 with a population of 75,082 in 2011, making it the second-largest city of the region of Dalmatia and the fifth-largest city in the country<br/>
+       UNESCO's World Heritage Site list included the fortified city of Zadar as part of Venetian Works of Defence between 15th and 17th centuries: Stato da Terra – western Stato da Mar in 2017<br/>
+       Today, Zadar is a historical center of Dalmatia, Zadar County's principal political, cultural, commercial, industrial, educational, and transportation centre
+    </div>
 
 
         <div class="row">
@@ -12,7 +17,7 @@
           <bunari/> 
         </div>
         <div class="col order-5">
-            <donat/>
+            <orgulje/>
         </div>
         <div class="col order-1">
             <kopnena/>
@@ -21,7 +26,7 @@
     
         <div class="row">
         <div class="col">
-            <orgulje/>
+            <donat/>
         </div>
         <div class="col order-5">
             <rimskif/>

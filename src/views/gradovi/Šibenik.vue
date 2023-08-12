@@ -24,12 +24,9 @@
     
         <div class="row">
         <div class="col">
-            <perivoj/>
-        </div>
-        <div class="col order-5">
             <vjecnica/>
         </div>
-        <div class="col order-1">
+        <div class="col order-5">
             <nikola/>
         </div>
         </div>        
@@ -42,7 +39,6 @@
     import bunar from '@/components/šibenik/bunar.vue';
     import mihovil from '@/components/šibenik/mihovil.vue';
     import nikola from '@/components/šibenik/nikola.vue';
-    import perivoj from '@/components/šibenik/perivoj.vue';
     import vjecnica from '@/components/šibenik/vjecnica.vue';
     
     export default{
@@ -52,7 +48,6 @@
             bunar,
             mihovil,
             nikola,
-            perivoj,
             vjecnica
         }, 
     };
