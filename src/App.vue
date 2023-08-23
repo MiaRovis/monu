@@ -11,9 +11,11 @@
           <div class="collapse navbar-collapse" id="navbarToggledDemo02">
             <ul class="navbar-nav ml-auto">
               <router-link id="link" to="/About">About Us</router-link>
-              <router-link id="link2" to="/Cities">Cities</router-link>
-              <router-link id="link2" to="/Natural">Natural beauties</router-link>
-              <router-link id="link3" to="/Blog">Blog</router-link>
+              <router-link id="link" to="/Cities">Cities</router-link>
+              <router-link id="link" to="/Natural">Natural beauties</router-link>
+              <router-link id="link" to="/Blog">Blog</router-link>
+              <router-link id="link" to="/Login">Login</router-link>
+              <router-link id="link" to="/Signup">Signup</router-link>
                     
             </ul>
   
@@ -60,28 +62,7 @@
     font-family:'Times New Roman', Times, serif;
   }
 
-  #link2{
-    color: rgb(68, 67, 67);
-    margin-left:100px;
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-  }
-
-  #link3{
-    color: rgb(68, 67, 67);
-    margin-left:100px;
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-  }
-
-  #link4{
-    color: rgb(68, 67, 67);
-    margin-left:100px;
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    text-align:right;
-  }
-  
+ 
   
   </style>
   
