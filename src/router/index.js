@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import {Auth} from  "@/service";
 import Home from '../views/About.vue'
 
 Vue.use(VueRouter)
@@ -40,7 +41,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Natural.vue')
   }
   ,{
-    path: '/Pula',
+    path: '/pula',
     name: 'Pula',
     component: () => import(/* webpackChunkName: "about" */ '../views/gradovi/Pula.vue')
   }
@@ -113,4 +114,4 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default router;

@@ -6,12 +6,13 @@
     <div class="col-sm">
     <br/>
 
-    <form>
+    <form @submit.prevent="login">
     <div class="form-group">
     <p id="admin"><b>Log-In</b></p>
     <label for="exampleInputEmail1">Email address</label>
     <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
     </div>
+    
 
     <div id="loz" class="form-group">
     <label for="exampleInputPassword2">Password</label>
@@ -20,7 +21,7 @@
     <br/>
     </div>
  
-    <button type="button"  class="btn btn-secondary">Submit</button>
+    <button type="submit"  class="btn btn-secondary">Submit</button>
     <br/>
     
     </form>
@@ -30,6 +31,31 @@
     </div>
     </div>
     </template>
+
+<script>
+import { Auth } from '@/service';
+
+export default {
+    data() {
+        return{
+            email:'',
+            password:'',
+        };
+    },
+    methods: {
+         async login() {
+            let success = await Auth.login(this.email, this.password);
+            console.log("Rezultat prijave", success);
+
+            if(success == true){
+                this.$router.push({name: "home" });
+            }
+        },
+    },
+};
+
+
+</script>
 
 <style lang="scss">
 
