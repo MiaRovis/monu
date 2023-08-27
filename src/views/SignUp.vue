@@ -6,7 +6,7 @@
     <div class="col-sm">
     <br/>
 
-    <form>
+    <form @submit.prevent="registerUser">
     <div class="form-group">
     <p id="admin"><b>Sign-up</b></p>
     <label for="exampleInputEmail1">Email address</label>
@@ -17,16 +17,16 @@
     <div id="loz" class="form-group">
     <label for="exampleInputPassword2">Password</label>
     <br/>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+    <input  type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
     </div>
 
     <div id="loz" class="form-group">
     <label for="exampleInputPassword2">Repeat password</label>
     <br/>
-    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" /><br/>
+    <input  type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" /><br/>
     </div>
  
-    <button type="button" class="btn btn-secondary">Submit</button>
+    <button type="submit" class="btn btn-secondary">Submit</button>
     <br/>
     
     </form>
@@ -36,6 +36,43 @@
     </div>
     </div>
     </template>
+
+<script>
+import store from '@/store';
+import { Auth } from '@/service';
+
+export default{
+    data:function(){
+        return{
+            store,
+            email:'',
+            password:''
+        }
+    },
+    methods: {
+        async registerUser(){
+            if (this.email=='' || this.password==''){
+            }
+            
+        else{
+            let userData = {
+                email:this.email, 
+                password:this.password,
+            }
+            await Auth.login(userData).then(() => {
+                this.$router.push({ path: '/auth' });
+                store.authenticated=true;
+                store.currentUserEmail=this.email;
+            });
+            }
+        },
+    },
+
+
+}
+
+
+</script>
 
 <style lang="scss">
 #admin{

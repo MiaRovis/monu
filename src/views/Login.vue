@@ -34,10 +34,12 @@
 
 <script>
 import { Auth } from '@/service';
+import store from '@/store';
 
 export default {
     data() {
         return{
+            store,
             email:'',
             password:'',
         };
@@ -48,10 +50,19 @@ export default {
             console.log("Rezultat prijave", success);
 
             if(success == true){
-                this.$router.push({name: "home" });
-            }
-        },
-    },
+            
+            store.authenticated = true;
+            store.email=this.email;
+            this.$router.push({path:'home'})
+            .then(() => {
+              this.$router.go();
+            });
+        console.log('Login result', success);
+
+        }
+        console.log("Authenticated: ",store.authenticated)
+      },
+  }
 };
 
 
