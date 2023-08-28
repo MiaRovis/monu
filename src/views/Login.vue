@@ -21,7 +21,7 @@
     <br/>
     </div>
  
-    <button type="submit"  class="btn btn-secondary">Submit</button>
+    <button type="submit" @click="login()"  class="btn btn-secondary">Submit</button>
     <br/>
     
     </form>
@@ -37,7 +37,7 @@ import { Auth } from '@/service';
 import store from '@/store';
 
 export default {
-    data() {
+    data:function() {
         return{
             store,
             email:'',

@@ -11,12 +11,14 @@
           <div class="collapse navbar-collapse" id="navbarToggledDemo02">
             <ul class="navbar-nav ml-auto">
               <router-link id="link" to="/About">About Us</router-link>
-              <router-link id="link" to="/Cities">Cities</router-link>
-              <router-link id="link" to="/Natural">Natural beauties</router-link>
-              <router-link id="link" to="/Blog">Blog</router-link>
-              <router-link id="link" to="/Login">Login</router-link>
-              <router-link id="link" to="/Signup">Signup</router-link>
-                    
+              <router-link v-if="authenticated" id="link" to="/Cities">Cities</router-link>
+              <router-link v-if="authenticated" id="link" to="/Natural">Natural beauties</router-link>
+              <router-link v-if="authenticated" id="link" to="/Blog">Blog</router-link>
+              <router-link v-if="!authenticated" id="link" to="/Login">Login</router-link>
+              <router-link v-if="!authenticated" id="link" to="/Signup">Signup</router-link>
+              <span v-if="authenticated">
+              <a v-if="authenticated" href="#" @click="logout()">Log out </a>
+              </span>
             </ul>
   
           </div>
@@ -30,7 +32,39 @@
   </template>
   
   <script>
+
+  import store from '@/store';
+  import { Auth } from '@/service/index.js';
+  
+
   document.body.style.backgroundColor="rgb(248, 159, 76)";
+
+  export default{
+    data() {
+      return{
+        varijabla: 1,
+      };
+    },
+    
+    computed: {
+      authenticated() {
+      return Auth.state.authenticated;
+    },
+    userEmail() {
+      return Auth.state.userEmail;
+    },
+
+    },
+
+    methods: {
+      logout(){
+      Auth.logout();
+      this.$router.go();
+      },
+    },
+  };
+  
+
 
  
 

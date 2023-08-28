@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 let Service = axios.create({
     baseUrl: 'http://localhost:3000/',
     timeout:1000,
@@ -21,39 +22,49 @@ let Auth = {
 
     async signUp(userData) {
         let post = await Service.post('/users', userData);
-        return post
+        return post;
     },
 
-    async login (email, password) {
-        let response = await Service.post("/auth", {
-            email: email,
-            password: password,
-        });
-
-        console.log(response)
-
-        let user = Response.data
-
-        localStorage.setItem("user", JSON.stringify(user));
-
-        return true;
+    async login(email, password) {
+        try {
+            let response = await Service.post('/auth', {
+                email: email,
+                password: password,
+            });
+    
+            console.log(response);
+    
+            if (response && response.data) {
+                let user = response.data;
+                localStorage.setItem("user", JSON.stringify(user));
+                return true;
+            } else {
+                console.error("Invalid response or missing data property in API response.");
+                return false;
+            }
+        } catch (error) {
+            console.error("Error during login:", error);
+            return false;
+        }
     },
+    
 
     logout(){
         localStorage.removeItem("user");
 
     },
 
-    getUser(){
-       return JSON.parse(localStorage.getItem("user"));
-     },
+    getUser() {
+        return JSON.parse(localStorage.getItem("user"));
+      },
+      
 
     getToken() {
 
         let user = Auth.getUser();
 
         if (user && user.token) {
-            return user.token
+            return user.token;
         }
         else {
             return false;
@@ -62,16 +73,16 @@ let Auth = {
     state: {
 
         get authenticated() {
-            return Auth.authenticated();
+            return Auth.getToken() !==false;
         },
-
+        
         get userEmail() {
-            let user = Auth.getUser()
+            let user = Auth.getUser();
             if (user) {
                 return user.email;
             }
-        }
-    }
+        },
+    },
 
 
 };
