@@ -47,7 +47,7 @@
     },
     
     computed: {
-      authenticated() {
+    authenticated() {
       return Auth.state.authenticated;
     },
     userEmail() {
