@@ -62,8 +62,8 @@ export default{
                 email:this.email, 
                 password:this.password,
             }
-            await Auth.login(userData).then(() => {
-                this.$router.push({ path: '/users' });
+            await Auth.signUp(userData).then(() => {
+                this.$router.push({ path: '/About' });
                 store.authenticated=true;
                 store.currentUserEmail=this.email;
             });

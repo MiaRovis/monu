@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 let Service = axios.create({
-    baseUrl: 'http://localhost:3000/',
+    baseURL: 'http://localhost:3000/',
     timeout:1000,
 });
 
@@ -21,13 +21,13 @@ Service.interceptors.response.use(
 let Auth = {
 
     async signUp(userData) {
-        let post = await Service.post('/users', userData);
+        let post = await Service.post('/user', userData);
         return post;
     },
 
     async login(email, password) {
         try {
-            let response = await Service.post('/auth', {
+            let response = await Service.post('/user', {
                 email: email,
                 password: password,
             });
