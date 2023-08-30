@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-
 let Service = axios.create({
     baseURL: 'http://localhost:3000/',
-    timeout:1000,
+    timeout: 1000,
 });
 
 Service.interceptors.response.use(
@@ -27,7 +26,7 @@ let Auth = {
 
     async login(email, password) {
         try {
-            let response = await Service.post('/user', {
+            let response = await Service.post('/login', {
                 email: email,
                 password: password,
             });
@@ -38,7 +37,7 @@ let Auth = {
                 let user = response.data;
                 localStorage.setItem("user", JSON.stringify(user));
                 return true;
-            } else {
+            } else { 
                 console.error("Invalid response or missing data property in API response.");
                 return false;
             }
