@@ -23,7 +23,7 @@
     <div id="loz" class="form-group">
     <label for="exampleInputPassword2">Repeat password</label>
     <br/>
-    <input  type="passwordRepeat" v-model="password" class="form-control" id="exampleInputPassword2" placeholder="Password" /><br/>
+    <input  type="password" v-model="password" class="form-control" id="exampleInputPassword2" placeholder="Password" /><br/>
     </div>
  
     <button type="submit" class="btn btn-secondary">Submit</button>
