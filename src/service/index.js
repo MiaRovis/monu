@@ -50,6 +50,7 @@ let Auth = {
 
     logout(){
         localStorage.removeItem("user");
+        
 
     },
 

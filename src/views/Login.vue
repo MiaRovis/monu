@@ -10,14 +10,14 @@
     <div class="form-group">
     <p id="admin"><b>Log-In</b></p>
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+    <input type="email" name="email" v-model="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
     </div>
     
 
     <div id="loz" class="form-group">
     <label for="exampleInputPassword2">Password</label>
     <br/>
-    <input type="password"  class="form-control" id="exampleInputPassword1" placeholder="Password" />
+    <input type="password" name="passowrd" v-model="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
     <br/>
     </div>
  
@@ -53,7 +53,7 @@ export default {
             
             store.authenticated = true;
             store.email=this.email;
-            this.$router.push({path:'home'})
+            this.$router.push({path:'About'})
             .then(() => {
               this.$router.go();
             });
