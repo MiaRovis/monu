@@ -6,7 +6,7 @@
     <div class="col-sm">
     <br/>
 
-    <form @submit.prevent="login">
+    <form  @submit.prevent="login">
     <div class="form-group">
     <p id="admin"><b>Log-In</b></p>
     <label for="exampleInputEmail1">Email address</label>
@@ -47,7 +47,7 @@ export default {
     methods: {
          async login() {
             let success = await Auth.login(this.email, this.password);
-            console.log("Rezultat prijave", success);
+            console.log("Rezultat prijave: ", success);
 
             if(success == true){
             
