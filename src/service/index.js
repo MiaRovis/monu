@@ -84,7 +84,34 @@ let Auth = {
         },
     },
 
-
 };
 
-export { Service, Auth };
+let addMonuments = {
+    async sendData(addMonuments) {
+        let postData = await Service.post('posts', addMonuments);
+        return postData;
+    },
+    async addPost(monuData) {
+        return this.sendData(monuData);
+    },
+    async getData() {
+        let response = await Service.get('posts');
+        console.log("Baza: ", response);
+        let data = response.data;
+
+        data = data.map((doc) => {
+            return{
+                id: doc._id,
+                name: doc.name,
+                image: doc.image,
+                description: doc.description,
+            }
+        });
+        console.log("Data: ", data);
+        return data;
+
+    }
+}
+
+
+export { Service, Auth, addMonuments };
