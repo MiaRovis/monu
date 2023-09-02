@@ -17,7 +17,7 @@
               <router-link v-if="!authenticated" id="link" to="/Login">Login</router-link>
               <router-link v-if="!authenticated" id="link" to="/Signup">Signup</router-link>
               <span v-if="authenticated">
-              <a v-if="authenticated" href="#" @click="logout()">Log out </a>
+              <a id="logo" v-if="authenticated" href="#" @click="logout()">Log out </a>
               </span>
             </ul>
   
@@ -59,6 +59,7 @@
     methods: {
       logout(){
       Auth.logout();
+      this.$router.push({path:'About'});
       this.$router.go();
       },
     },
@@ -93,6 +94,13 @@
   }
   
   #link{
+    color: rgb(68, 67, 67);
+    margin-left:50px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #logo{
     color: rgb(68, 67, 67);
     margin-left:50px;
     font-size: 25px;
