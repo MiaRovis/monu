@@ -59,7 +59,7 @@
     methods: {
       logout(){
       Auth.logout();
-      this.$router.push({path:'About'});
+      this.$router.push({path:'home'});
       this.$router.go();
       },
     },
