@@ -96,7 +96,6 @@ let addMonuments = {
     },
     async getData() {
         let response = await Service.get('posts');
-        console.log("Baza: ", response);
         let data = response.data;
 
         data = data.map((doc) => {
