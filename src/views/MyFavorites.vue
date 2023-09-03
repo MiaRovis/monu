@@ -46,6 +46,7 @@ export default{
 <style lang="scss">
 #naslov2{
     font-size:medium;
+    
 }
 
 </style>
