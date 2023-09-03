@@ -113,6 +113,25 @@ let addMonuments = {
         console.error('greska u dohvacanju slika', error);
         return [];
 
+    },
+    async lista(MonuList){
+        let popis = await Service.post('/favorites', MonuList);
+        return popis;
+    },
+    async popis(user){
+        let response = await Service.get(`/favorites/ ${user}`);
+        let doc = response.data;
+        doc = doc.map((doc) => {
+            return {
+                id: doc._id,
+                name: doc.name,
+                image: doc.image,
+                description: doc.description,
+                user: doc.user
+            }
+
+        });
+        return doc;
     }
 }
 

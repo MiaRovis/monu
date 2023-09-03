@@ -41,6 +41,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Natural.vue')
   }
   ,{
+    path: '/myfavorites',
+    name: 'Myfavorites',
+    component: () => import(/* webpackChunkName: "about" */ '../views/MyFavorites.vue')
+  }
+  ,{
     path: '/pula',
     name: 'Pula',
     component: () => import(/* webpackChunkName: "about" */ '../views/gradovi/Pula.vue')

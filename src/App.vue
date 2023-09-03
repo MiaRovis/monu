@@ -14,6 +14,7 @@
               <router-link v-if="authenticated" id="link" to="/Cities">Cities</router-link>
               <router-link v-if="authenticated" id="link" to="/Natural">Natural beauties</router-link>
               <router-link v-if="authenticated" id="link" to="/Blog">Blog</router-link>
+              <router-link v-if="authenticated" id="link" to="/MyFavorites">My Favorites</router-link>
               <router-link v-if="!authenticated" id="link" to="/Login">Login</router-link>
               <router-link v-if="!authenticated" id="link" to="/Signup">Signup</router-link>
               <span v-if="authenticated">
