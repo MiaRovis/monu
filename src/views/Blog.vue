@@ -1,6 +1,6 @@
 <template>
     <div>
-    <div class="content">
+    <div id="prvidiv" class="content">
         <h2 id="prvo"><b>How to publish</b></h2>
         <br>
         <form @sumbit.prevent="addMonuments">
@@ -36,10 +36,22 @@
         <div class="input-group">
             <button id="batn" type="submit" @click="addPost()"  class="btn btn-secondary">Submit</button>
         </div>
-        
-        </form>
 
+       
+        </form>
         </div>
+        <div id="objave" class="image-list">
+      <div v-for="image in images" :key="image.id">
+        <img :src="image.image" alt="Monument" id="slike">
+       <div id="card-footer text-muted text-left">
+       {{ image.name }}
+       <br/>
+       {{ image.description }}
+       <br/>
+      </div>
+      </div>
+
+    </div>
     </div>
 </template>
 
@@ -52,9 +64,13 @@ export default{
             monuData: {
                 name:'',
                 image:'',
-                description:''
+                description:'',
             },
+            images: []
         };
+    },
+    created(){
+        this.fetchImages();
     },
     methods: {
         async addPost(){
@@ -63,13 +79,21 @@ export default{
                 this.monuData.image === "" ||
                 this.monuData.description === ""
             ){
-            } else {
-                    await addMonuments.addPost(this.monuData);
-                    this.monuData.name = "";
-                    this.monuData.image = "";
-                    this.monuData.description = "";
-                
-                	}
+                return;
+            } 
+            await addMonuments.addPost(this.monuData);
+            
+                 this.monuData.name = "";
+                 this.monuData.image = "";
+                 this.monuData.description = "";
+                        
+                 this.fetchImages();
+        },
+                 async fetchImages(){
+                    const images = await addMonuments.getData();
+
+                    this.images = images;
+                 
         },
     },
 };
@@ -104,5 +128,20 @@ export default{
 #batn{
     margin-left:50px;
     margin-top:20px;
+}
+
+#slike{
+    width:350px;
+    height:300px;
+}
+#objave{
+    text-align: center;
+    color:black;
+    float:right;
+    margin-right:25%;
+    margin-top:2%;
+}
+#prvidiv{
+    float:left;
 }
 </style>

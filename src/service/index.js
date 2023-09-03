@@ -109,6 +109,10 @@ let addMonuments = {
         console.log("Data: ", data);
         return data;
 
+    }, catch(error){
+        console.error('greska u dohvacanju slika', error);
+        return [];
+
     }
 }
 
