@@ -109,7 +109,7 @@ export default{
                 description: description,
                 user: this.auth.state.userEmail,
             };
-            await addMonuments.lista(favorites_list);
+            await addMonuments.lista2(favorites_list);
         }
     },
 };

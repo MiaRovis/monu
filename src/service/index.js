@@ -114,11 +114,15 @@ let addMonuments = {
         return [];
 
     },
-    async lista(MonuList){
-        let popis = await Service.post('/favorites', MonuList);
-        return popis;
+
+    //dodavanje fotografije
+    async lista2(MonuList){
+        let lista3 = await Service.post('/favorites', MonuList);
+        return lista3;
     },
-    async popis(user){
+
+    //prikazivanje fotografije
+    async lista3(user){
         let response = await Service.get(`/favorites/ ${user}`);
         let doc = response.data;
         doc = doc.map((doc) => {

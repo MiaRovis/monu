@@ -3,11 +3,12 @@
         <div>
             <h3 id="naslov2">List of your saved monuments</h3>
             <ul>
-                <li v-for="favorite in favorite" :key="favorite"></li>
+                <li v-for="favorite in favorite" :key="favorite.id"></li>
+                <img :src="favorite.image" alt="Monument">
                 <p>{{ favorite.name }}</p>
                 <br/>
                 <p>{{ favorite.description }}</p>
-                <img :src="favorite.image" alt="Monument">
+                
 
             </ul>
         </div>
@@ -28,7 +29,7 @@ export default{
     methods: {
         async fetchfavorite() {
             try {
-                this.favorite = await addMonuments.lista(this.auth.userEmail);
+                this.favorite = await addMonuments.lista3(this.auth.userEmail);
             } catch (error) {
                 console.error('Neuspjeli dohvat fotografije:', error);
             }
