@@ -48,6 +48,10 @@
        <br/>
        {{ image.description }}
        <br/>
+       <button id="sl" @click="addToFavorites(favorite.name, favorite.image, favorite.description)" class="btn-btn-primary">
+                  Add to Favorites
+        </button>
+
       </div>
       </div>
 
@@ -56,9 +60,10 @@
 </template>
 
 <script>
-import { addMonuments } from '@/service';
+import { Auth, addMonuments } from '@/service';
 
 export default{
+    name: 'Blog',
     data(){
         return{
             monuData: {
@@ -66,7 +71,9 @@ export default{
                 image:'',
                 description:'',
             },
-            images: []
+            images: [],
+            favorite: [],
+            auth: Auth,
         };
     },
     created(){
@@ -95,6 +102,15 @@ export default{
                     this.images = images;
                  
         },
+        async addToFavorites(name, image, description){
+            let favorites_list = {
+                name: name,
+                image: image,
+                description: description,
+                user: this.auth.state.userEmail,
+            };
+            await addMonuments.lista(favorites_list);
+        }
     },
 };
 
@@ -143,5 +159,9 @@ export default{
 }
 #prvidiv{
     float:left;
+}
+#sl{
+    margin-bottom:10px;
+    color:black;
 }
 </style>
