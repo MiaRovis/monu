@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let Service = axios.create({
-    baseURL: 'https:/monu-backend-18n9.vercel.app:3000',
+    baseURL: 'https:/monu-backend-18n9.vercel.app/',
     timeout: 1000,
 });
 
