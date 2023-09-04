@@ -110,12 +110,8 @@ export default{
                 user: this.auth.state.userEmail,
             };
             await addMonuments.lista2(MonuList);
-            this.fetchfavorite();
-            
+                  
         },        
-        async created() {
-        this.favorite = await addMonuments.lista3(this.auth.userEmail);
-}   
     },
 };
 

@@ -28,7 +28,7 @@ export default{
     methods: {
         async fetchfavorite() {
             try {
-                this.favorite = await addMonuments.lista3(this.auth.userEmail);
+                this.favorite = await addMonuments.lista2(this.auth.userEmail);
             } catch (error) {
                 console.error('Neuspjeli dohvat fotografije:', error);
             }
