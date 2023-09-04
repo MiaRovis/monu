@@ -26,7 +26,7 @@
         </div>
         <br/>
 
-        <p id="drugo">Lastly, make sure you add a description of the monument its location: </p>
+        <p id="drugo">Lastly, make sure you add a description of the monument and its location: </p>
         <div id="opis2" class="form-group"></div>
             <textarea v-model="monuData.description" 
             id="MonuDesc" 
@@ -48,7 +48,7 @@
        <br/>
        {{ image.description }}
        <br/>
-       <button id="sl" @click="addToFavorites(favorite.name, favorite.image, favorite.description)" class="btn-btn-primary">
+       <button id="sl" @click="addToFavorites(image.name, image.image, image.description)" class="btn-btn-primary">
                   Add to Favorites
         </button>
 
@@ -148,8 +148,8 @@ export default{
 }
 
 #slike{
-    width:350px;
-    height:300px;
+    width:370px;
+    height:350px;
 }
 #objave{
     text-align: center;
