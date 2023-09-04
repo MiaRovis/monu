@@ -1,20 +1,19 @@
 <template>
     <div>
-        <div>
-            <h3 id="naslov2">List of your saved monuments</h3>
-            <ul>
-                <li v-for="favorite in favorite" :key="favorite.id"></li>
-                <img :src="favorite.image" alt="Monument">
-                <p>{{ favorite.name }}</p>
-                <br/>
-                <p>{{ favorite.description }}</p>
-                
-
-            </ul>
-        </div>
+      <div>
+        <h3 id="naslov2">List of your saved monuments</h3>
+        <ul>
+          <li v-for="favorite in favorite" :key="favorite.id">
+            <img :src="favorite.image" alt="Monument">
+            <p>{{ favorite.name }}</p>
+            <br/>
+            <p>{{ favorite.description }}</p>
+          </li>
+        </ul>
+      </div>
     </div>
-</template>
-
+  </template>
+  
 <script>
 import { Auth, addMonuments } from '@/service';
 
@@ -35,7 +34,7 @@ export default{
             }
         },
 
-        async created(){
+         async created(){
             this.fetchfavorite();
         }
     },

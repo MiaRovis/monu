@@ -103,14 +103,19 @@ export default{
                  
         },
         async addToFavorites(name, image, description){
-            let favorites_list = {
+            let MonuList = {
                 name: name,
                 image: image,
                 description: description,
                 user: this.auth.state.userEmail,
             };
-            await addMonuments.lista2(favorites_list);
-        }
+            await addMonuments.lista2(MonuList);
+            this.fetchfavorite();
+            
+        },        
+        async created() {
+        this.favorite = await addMonuments.lista3(this.auth.userEmail);
+}   
     },
 };
 

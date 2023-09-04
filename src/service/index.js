@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let Service = axios.create({
-    baseURL: 'https://monu-backend.vercel.app',
+    baseURL: 'http://localhost:3000/',
     timeout: 1000,
 });
 
@@ -38,11 +38,11 @@ let Auth = {
                 localStorage.setItem("user", JSON.stringify(user));
                 return true;
             } else { 
-                console.error("Invalid response or missing data property in API response.");
+                console.error("Korisnik nije registriran!");
                 return false;
             }
         } catch (error) {
-            console.error("Error during login:", error);
+            console.error("Error:", error);
             return false;
         }
     },
@@ -115,7 +115,7 @@ let addMonuments = {
 
     },
 
-    //dodavanje fotografije
+    //dodavanje fotografije 
     async lista2(MonuList){
         let lista3 = await Service.post('/favorites', MonuList);
         return lista3;

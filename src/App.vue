@@ -17,10 +17,8 @@
               <router-link v-if="authenticated" id="link" to="/MyFavorites">My Favorites</router-link>
               <router-link v-if="!authenticated" id="link" to="/Login">Login</router-link>
               <router-link v-if="!authenticated" id="link" to="/Signup">Signup</router-link>
-              <span v-if="authenticated">
               <a id="logo" v-if="authenticated" href="#" @click="logout()">Log out </a>
-              </span>
-            </ul>
+              </ul>
   
           </div>
         </div>
@@ -60,18 +58,12 @@
     methods: {
       logout(){
       Auth.logout();
-      this.$router.push({path:'About'});
-      this.$router.go();
+      this.$router.push({path:'/about'});
       },
     },
   };
-  
 
-
- 
-
-
-  </script>
+</script>
 
 
   <style lang="scss">
